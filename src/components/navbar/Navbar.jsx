@@ -2,7 +2,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav>
+      <Link href='/' passHref>Esteem</Link>
+    </nav>
   );
 }
 
