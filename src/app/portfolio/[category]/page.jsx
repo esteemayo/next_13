@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import Button from '@/components/button/Button';
 import styles from './page.module.scss';
 
