@@ -6,7 +6,7 @@ import styles from './page.module.scss';
 const Blog = () => {
   return (
     <div className={styles.mainContainer}>
-      <Link href='#' className={styles.container}>
+      <Link href='/blog/testId' className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
             src='https://images.pexels.com/photos/12225910/pexels-photo-12225910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
@@ -21,7 +21,7 @@ const Blog = () => {
           <p className={styles.desc}>description</p>
         </div>
       </Link>
-      <Link href='#' className={styles.container}>
+      <Link href='/blog/testId' className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
             src='https://images.pexels.com/photos/12225910/pexels-photo-12225910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
@@ -36,7 +36,7 @@ const Blog = () => {
           <p className={styles.desc}>description</p>
         </div>
       </Link>
-      <Link href='#' className={styles.container}>
+      <Link href='/blog/testId' className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
             src='https://images.pexels.com/photos/12225910/pexels-photo-12225910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
