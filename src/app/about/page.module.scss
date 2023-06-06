@@ -29,6 +29,12 @@
       display: flex;
       flex-direction: column;
       gap: 3rem;
+
+      .desc {
+        font-weight: 300;
+        font-size: 1.8rem;
+        text-align: justify;
+      }
     }
   }
 }
