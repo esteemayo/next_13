@@ -1,0 +1,50 @@
+.container {
+  .top {
+    display: flex;
+
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title {
+        font-size: 4rem;
+      }
+
+      .desc {
+        font-weight: 300;
+        font-size: 1.8rem;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .avatar {
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .imageContainer {
+      flex: 1;
+      height: 30rem;
+      position: relative;
+
+      .image {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 5rem;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #999;
+    text-align: justify;
+  }
+}
