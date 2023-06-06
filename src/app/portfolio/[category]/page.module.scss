@@ -5,14 +5,24 @@
   }
 
   .item {
-    .title {
-    }
+    display: flex;
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 
-    .desc {
+    .content {
+      flex: 1;
+
+      .title {
+      }
+
+      .desc {
+      }
     }
   }
 
   .imgContainer {
+    flex: 1;
     .img {
     }
   }
