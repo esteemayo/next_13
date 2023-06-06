@@ -8,5 +8,14 @@
       object-fit: cover;
       filter: grayscale(100%);
     }
+
+    .imgText {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      padding: 0.5rem;
+      background-color: var(--clr-primary-green);
+      color: var(--clr-white);
+    }
   }
 }
