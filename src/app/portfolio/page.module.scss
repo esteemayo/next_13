@@ -19,6 +19,18 @@
         border: 0.5rem solid #bbb;
         border-radius: 0.5rem;
         position: relative;
+
+        &:first-child {
+          background-image: url('/illustration.png');
+        }
+
+        &:nth-child(2) {
+          background-image: url('/websites.jpg');
+        }
+
+        &:last-child {
+          background-image: url('/apps.jpg');
+        }
       }
 
       .title {
