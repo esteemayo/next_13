@@ -4,7 +4,7 @@ import styles from './Navbar.module.scss';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className={styles.container}>
       <Link href='/' passHref>Esteem</Link>
       <div>
         {links.map((link) => {
