@@ -1,6 +1,7 @@
 import { Roboto } from 'next/font/google';
 
 import Navbar from '@/components/navbar/Navbar';
+import ThemeProvider from '@/context/ThemeContext';
 import Footer from '@/components/footer/Footer';
 import './globals.css'
 
