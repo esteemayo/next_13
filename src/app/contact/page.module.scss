@@ -14,6 +14,10 @@
       flex: 1;
       height: 50rem;
       position: relative;
+
+      .image {
+        object-fit: cover;
+      }
     }
 
     .form {
