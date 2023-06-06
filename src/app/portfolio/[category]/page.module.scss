@@ -11,6 +11,10 @@
     margin-top: 5rem;
     margin-bottom: 10rem;
 
+    &:nth-child(2n + 1) {
+      flex-direction: row-reverse;
+    }
+
     .content {
       flex: 1;
       display: flex;
