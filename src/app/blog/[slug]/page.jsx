@@ -1,6 +1,10 @@
+import styles from './page.module.scss';
+
 const BlogPost = () => {
   return (
-    <div>BlogPost</div>
+    <div className={styles.container}>
+      BlogPost
+    </div>
   );
 }
 
