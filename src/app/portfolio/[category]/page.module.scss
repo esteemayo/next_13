@@ -1,6 +1,7 @@
 .container {
   .catTitle {
     display: inline-block;
+    text-transform: lowercase;
     color: var(--clr-main);
     line-height: 1;
   }
