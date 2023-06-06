@@ -20,6 +20,14 @@
         border-radius: 0.5rem;
         position: relative;
       }
+
+      .title {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        font-weight: bold;
+        font-size: 4rem;
+      }
     }
   }
 }
