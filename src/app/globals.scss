@@ -27,10 +27,12 @@ body {
   cursor: default;
 }
 
-a:link,
-a:visited {
-  text-decoration: none;
-  color: inherit;
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .theme {
