@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import { links } from '@/data';
 import styles from './Navbar.module.scss';
+import DarkModeToggle from '../darkModeToggle/DarkModeToggle';
 
 const Navbar = () => {
   return (
