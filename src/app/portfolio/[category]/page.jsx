@@ -1,6 +1,10 @@
-const Category = () => {
+import styles from './page.module.scss';
+
+const Category = ({ params }) => {
   return (
-    <div>Category</div>
+    <div className={styles.container}>
+
+    </div>
   );
 }
 
