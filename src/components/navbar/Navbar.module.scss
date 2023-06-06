@@ -16,8 +16,12 @@
   }
 
   .logout {
+    text-transform: capitalize;
     padding: 0.5rem;
     border: none;
     background-color: #53c28b;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
   }
 }
