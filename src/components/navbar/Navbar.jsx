@@ -7,7 +7,9 @@ import styles from './Navbar.module.scss';
 const Navbar = () => {
   return (
     <nav className={styles.container}>
-      <Link href='/' passHref className={styles.logo}>Esteem</Link>
+      <Link href='/' passHref className={styles.logo}>
+        Esteem
+      </Link>
       <div className={styles.links}>
         <DarkModeToggle />
         {links.map((link) => {
