@@ -9,6 +9,7 @@ const Navbar = () => {
     <nav className={styles.container}>
       <Link href='/' passHref className={styles.logo}>Esteem</Link>
       <div className={styles.links}>
+        <DarkModeToggle />
         {links.map((link) => {
           const { id, url, title } = link;
           return (
