@@ -20,6 +20,7 @@
         border-radius: 0.5rem;
         background-size: cover !important;
         position: relative;
+        transition: all 0.3s ease;
 
         &:first-child {
           background-image: url('/illustration.png');
