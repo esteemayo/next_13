@@ -5,3 +5,8 @@
   padding: 0;
   box-sizing: inherit;
 }
+
+html {
+  font-size: 65%;
+  box-sizing: border-box;
+}
