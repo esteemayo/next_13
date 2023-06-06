@@ -33,6 +33,10 @@ a:visited {
   color: inherit;
 }
 
+.theme {
+  transition: all 1s ease;
+}
+
 .light {
   background-color: var(--clr-white);
   color: #111;
