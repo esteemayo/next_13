@@ -34,6 +34,10 @@
         }
       }
 
+      &:hover .title {
+        color: var(--clr-primary-green);
+      }
+
       .title {
         position: absolute;
         right: 1rem;
