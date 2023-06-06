@@ -24,7 +24,12 @@
     .button {
       display: inline-block;
       border: none;
+      text-transform: capitalize;
+      width: max-content;
       padding: 2rem;
+      background-color: #53c28b;
+      color: #fff;
+      border-radius: 0.5rem;
     }
 
     .img {
