@@ -10,5 +10,13 @@
   .items {
     display: flex;
     gap: 5rem;
+
+    .item {
+      width: 30rem;
+      height: 30rem;
+      border: 0.5rem solid #bbb;
+      border-radius: 0.5rem;
+      position: relative;
+    }
   }
 }
