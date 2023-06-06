@@ -16,6 +16,12 @@ const Navbar = () => {
             </Link>
           );
         })}
+        <button
+          type='button'
+          className={styles.logout}
+        >
+          logout
+        </button>
       </div>
     </nav>
   );
