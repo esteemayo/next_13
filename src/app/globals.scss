@@ -33,6 +33,11 @@ a:visited {
   color: inherit;
 }
 
+.light {
+  background-color: var(--clr-white);
+  color: #111;
+}
+
 .container {
   max-width: 136.6rem;
   min-height: 100vh;
