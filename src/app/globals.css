@@ -10,3 +10,9 @@ html {
   font-size: 65%;
   box-sizing: border-box;
 }
+
+body {
+  color: #777;
+  line-height: 1.6;
+  cursor: default;
+}
