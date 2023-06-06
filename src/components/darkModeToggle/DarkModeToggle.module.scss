@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   .icon {
     font-size: 1.2rem;
@@ -16,5 +17,7 @@
     width: 1.5rem;
     height: 1.5rem;
     background-color: var(--clr-main);
+    border-radius: 50%;
+    position: absolute;
   }
 }
