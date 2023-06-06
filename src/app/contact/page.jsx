@@ -4,6 +4,10 @@ import styles from './page.module.scss';
 import Button from '@/components/button/Button';
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Let&apos;s Keep in Touch</h1>
