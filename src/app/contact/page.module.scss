@@ -8,10 +8,13 @@
     gap: 10rem;
 
     .imgContainer {
+      flex: 1;
       position: relative;
     }
 
     .form {
+      flex: 1;
+
       .input {
       }
 
