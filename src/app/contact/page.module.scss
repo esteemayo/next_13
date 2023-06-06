@@ -1,0 +1,22 @@
+.container {
+  .title {
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    .imgContainer {
+      position: relative;
+    }
+
+    .form {
+      .input {
+      }
+
+      .textarea {
+      }
+    }
+  }
+}
