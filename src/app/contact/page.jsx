@@ -20,7 +20,7 @@ const Contact = () => {
             className={styles.image}
           />
         </div>
-        <form className={styles.form}>
+        <form onSubmit={handleSubmit} className={styles.form}>
           <input type='text' placeholder='name' className={styles.input} />
           <input type='text' placeholder='email' className={styles.input} />
           <textarea
