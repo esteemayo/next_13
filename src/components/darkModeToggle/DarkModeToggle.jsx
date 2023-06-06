@@ -1,4 +1,4 @@
-import styles from './DarkModeToggle.scss';
+import styles from './DarkModeToggle.module.scss';
 
 const DarkModeToggle = () => {
   return (
