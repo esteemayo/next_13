@@ -1,3 +1,5 @@
+import styles from './Navbar.module.scss';
+
 const Footer = () => {
   return (
     <footer>
