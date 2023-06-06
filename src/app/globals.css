@@ -27,3 +27,13 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
+
+.container {
+  max-width: 136.6rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
