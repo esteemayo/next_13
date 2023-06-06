@@ -13,7 +13,9 @@ const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ mode, toggle }}>
-      {children}
+      <div className={`theme ${mode}`}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
 }
