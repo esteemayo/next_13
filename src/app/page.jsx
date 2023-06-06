@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import Hero from 'public/hero.png';
-import styles from './page.module.scss';
 import Button from '@/components/button/Button';
 
 const Home = () => {
