@@ -1,7 +1,8 @@
 import styles from './DarkModeToggle.module.scss';
+import { useThemeGlobalContext } from '@/context/ThemeContext';
 
 const DarkModeToggle = () => {
-  const mode = 'dark';
+  const { mode } = useThemeGlobalContext();
 
   return (
     <div className={styles.container}>
