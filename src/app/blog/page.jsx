@@ -5,7 +5,7 @@ import styles from './page.module.scss';
 
 const Blog = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.mainContainer}>
       <Link href='#' className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
