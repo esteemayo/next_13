@@ -1,8 +1,8 @@
-import styles from './Navbar.module.scss';
+import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div>&copy;2023 Esteem. All rights reserved.</div>
       <div></div>
     </footer>
