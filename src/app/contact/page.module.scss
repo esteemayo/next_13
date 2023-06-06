@@ -24,6 +24,9 @@
 
       .input,
       .textArea {
+        display: inline-block;
+        border: none;
+        outline: none;
         padding: 2rem;
       }
     }
