@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div>&copy;2023 Esteem. All rights reserved.</div>
-      <div>
+      <div className={styles.social}>
         <Image src='/1.png' width={15} height={15} alt='' />
         <Image src='/2.png' width={15} height={15} alt='' />
         <Image src='/3.png' width={15} height={15} alt='' />
