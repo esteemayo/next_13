@@ -8,7 +8,6 @@ const Footer = () => {
       <div>
         <Image
           src='/1.png'
-          fill={true}
           width={15}
           height={15}
           alt=''
