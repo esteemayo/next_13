@@ -9,6 +9,11 @@
     gap: 5rem;
 
     .title {
+      font-size: 7.2rem;
+      background-image: linear-gradient(to bottom, #194c33, #bbb);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .desc {
