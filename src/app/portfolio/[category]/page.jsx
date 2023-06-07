@@ -5,7 +5,19 @@ import { items } from './data';
 import Button from '@/components/button/Button';
 import styles from './page.module.scss';
 
+const getData = (category) => {
+  const data = items[category];
+
+  if (data) {
+    return data;
+  }
+
+  return notFound();
+}
+
 const Category = ({ params }) => {
+  const data = getData(params.category);
+
   return (
     <div className={styles.container}>
       <h1 className={styles.catTitle}>{params.category}</h1>
