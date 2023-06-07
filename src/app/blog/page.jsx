@@ -27,7 +27,7 @@ const Blog = async () => {
           <Link key={id} href={`/blog/${encodeURIComponent(id)}`} className={styles.container}>
             <div className={styles.imageContainer}>
               <Image
-                src='https://images.pexels.com/photos/12225910/pexels-photo-12225910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                src={image}
                 alt=''
                 width={400}
                 height={250}
