@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+
 import styles from './page.module.scss';
 
 async function getData(id) {
