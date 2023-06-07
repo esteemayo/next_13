@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 const Dashboard = () => {
+  const [data, setData] = useState([]);
+
   return (
     <div>Dashboard</div>
   );
