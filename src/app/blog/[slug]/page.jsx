@@ -8,7 +8,7 @@ async function getData(id) {
   });
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    return notFound();
   }
 
   const data = await res.json();
