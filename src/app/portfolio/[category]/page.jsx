@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
 import { items } from './data';
 import Button from '@/components/button/Button';
