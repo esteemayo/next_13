@@ -7,6 +7,7 @@ const postSchema = new Schema({
     type: String,
     required: [true, 'A post must have a title'],
   },
+  slug: String,
   desc: {
     type: String,
     required: [true, 'A post must have a description'],
