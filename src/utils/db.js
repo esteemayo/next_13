@@ -10,6 +10,8 @@ const connectDB = async () => {
   }
 };
 
+mongoose.set('strictQuery', true);
+
 mongoose.connection.on('disconnect', () => {
   console.log('MongoDB disconnected');
 });
