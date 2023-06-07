@@ -21,7 +21,7 @@ const BlogPost = async ({ params: { slug } }) => {
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.info}>
-          <h1 className={styles.title}>Lorem ipsum dolor sit amet consectetur adiposocing elit.</h1>
+          <h1 className={styles.title}>{data.title}</h1>
           <p className={styles.desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa debitis voluptatibus iure earum explicabo, facilis laboriosam eligendi repudiandae, temporibus distinctio delectus expedita dolore beatae dolorem accusamus et aliquid architecto?
           </p>
