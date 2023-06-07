@@ -4,9 +4,9 @@ import useSWR from 'swr'
 import { useEffect, useState } from 'react';
 
 const Dashboard = () => {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
+  // const [data, setData] = useState([]);
+  // const [isLoading, setIsLoading] = useState(true);
+  // const [isError, setIsError] = useState(false);
 
   // useEffect(() => {
   //   (async () => {
