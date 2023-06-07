@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './page.module.scss';
 
 async function getData() {
-  const res = await fetch('http://jsonplaceholder.typicode.com/posts', {
+  const res = await fetch('http://localhost:300/api/posts', {
     cache: 'no-store',
   });
 
