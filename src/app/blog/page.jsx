@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './page.module.scss';
 
 async function getData() {
-  const res = await fetch('http://localhost:300/api/posts', {
+  const res = await fetch('http://localhost:3000/api/posts', {
     cache: 'no-store',
   });
 
