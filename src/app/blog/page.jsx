@@ -36,7 +36,7 @@ const Blog = async () => {
             </div>
             <div className={styles.content}>
               <h1 className={styles.title}>{title}</h1>
-              <p className={styles.desc}>{body}</p>
+              <p className={styles.desc}>{desc}</p>
             </div>
           </Link>
         );
