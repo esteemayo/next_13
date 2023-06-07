@@ -1,7 +1,22 @@
 import Image from 'next/image';
 import styles from './page.module.scss';
 
-const BlogPost = () => {
+async function getData(id) {
+  const res = await fetch(`http://jsonplaceholder.typicode.com/posts/${id}`, {
+    cache: 'no-store',
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+
+  const data = await res.json();
+  return data;
+}
+
+const BlogPost = async ({ params: { slug } }) => {
+  const data = await getData(slug);
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
