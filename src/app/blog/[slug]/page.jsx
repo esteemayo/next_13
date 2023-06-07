@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation';
 
 import styles from './page.module.scss';
 
-async function getData(id) {
-  const res = await fetch(`http://jsonplaceholder.typicode.com/posts/${id}`, {
+async function getData(slug) {
+  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
     cache: 'no-store',
   });
 
