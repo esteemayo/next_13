@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { items } from './data';
 import Button from '@/components/button/Button';
 import styles from './page.module.scss';
 
