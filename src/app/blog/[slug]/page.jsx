@@ -46,11 +46,7 @@ const BlogPost = async ({ params: { slug } }) => {
         </div>
       </div>
       <div className={styles.content}>
-        <p className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores id eligendi explicabo ipsam iure aperiam aliquam mollitia voluptatem dicta, totam, expedita quae cum adipisci itaque suscipit ducimus. Veritatis, cum quasi?
-          Libero facere esse rem magni, dignissimos sequi beatae. Ea, maiores accusamus dolor odio nobis quaerat fugit quia, maxime ipsum beatae odit. Quisquam animi officia repellat aliquid alias quos harum ex?
-          Eveniet maxime blanditiis nam et sed ipsa placeat repellendus quis perspiciatis corporis? Explicabo harum nihil omnis alias amet quasi, voluptatibus pariatur numquam tempore debitis eveniet doloremque laborum corrupti accusamus quidem!
-        </p>
+        <p className={styles.text}>{data.content}</p>
       </div>
     </div>
   );
