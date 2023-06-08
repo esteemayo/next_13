@@ -33,7 +33,7 @@ const BlogPost = async ({ params: { slug } }) => {
               alt=''
               className={styles.avatar}
             />
-            <span className={styles.username}></span>
+            <span className={styles.username}>{data.username}</span>
           </div>
         </div>
         <div className={styles.imageContainer}>
