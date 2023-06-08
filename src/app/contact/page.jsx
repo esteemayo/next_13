@@ -4,6 +4,11 @@ import Image from 'next/image';
 import styles from './page.module.scss';
 import Button from '@/components/button/Button';
 
+export const metadata = {
+  title: 'Esteem Designs | Contact Information',
+  description: 'This is Contact page',
+}
+
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
