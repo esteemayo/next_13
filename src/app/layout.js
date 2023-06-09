@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
             {children}
             <Footer />
           </div>
-          </SessionProvider>
         </ThemeProvider>
       </body>
     </html>
