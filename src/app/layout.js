@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
             {children}
             <Footer />
           </div>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
