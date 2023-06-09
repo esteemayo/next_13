@@ -21,11 +21,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
         <ThemeProvider>
-            <div className='container'>
-              <Navbar />
-              {children}
-              <Footer />
-            </div>
+          <div className='container'>
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
           </SessionProvider>
         </ThemeProvider>
       </body>
