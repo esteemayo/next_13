@@ -24,10 +24,11 @@
       display: inline-block;
       border: none;
       text-transform: capitalize;
+      font-weight: bold;
       width: max-content;
       padding: 2rem;
       background-color: var(--clr-main);
-      color: var(--clr-white);
+      color: #eee;
       border-radius: 0.5rem;
       cursor: pointer;
     }
