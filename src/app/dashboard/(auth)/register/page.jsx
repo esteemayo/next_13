@@ -18,6 +18,28 @@ const Register = () => {
     const email = e.target[2].value;
     const password = e.target[3].value;
     const confirmPassword = e.target[3].value;
+
+    const newUser = {
+      name,
+      username,
+      email,
+      password,
+      confirmPassword,
+    };
+
+    try {
+      const res = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'appliaction/json',
+        },
+        body: JSON.stringify(newUser),
+      });
+
+      res.status === 201 && push('/dashboard/login');
+    } catch (err) {
+      setError(true);
+    }
   };
 
   return (
