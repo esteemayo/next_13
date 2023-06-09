@@ -16,8 +16,6 @@ const Register = () => {
     const email = e.target[2].value;
     const password = e.target[3].value;
     const confirmPassword = e.target[3].value;
-
-    console.log({ name, username, email, password, confirmPassword })
   };
 
   return (
