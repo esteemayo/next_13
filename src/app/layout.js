@@ -1,5 +1,4 @@
 import { Roboto } from 'next/font/google';
-import { SessionProvider } from 'next-auth/react';
 
 import Navbar from '@/components/navbar/Navbar';
 import ThemeProvider from '@/context/ThemeContext';
