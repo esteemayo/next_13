@@ -8,7 +8,7 @@ import styles from './page.module.scss';
 const Register = () => {
   const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const name = e.target[0].value;
