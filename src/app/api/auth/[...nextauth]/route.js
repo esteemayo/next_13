@@ -10,6 +10,24 @@ const handler = NextAuth({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
+    CredentialsProvider({
+      id: 'credentials',
+      name: 'Credentials',
+      async authorize(credentials) {
+        await connectDB();
+
+        try {
+          const user = await User.findOne({ email: credentials.email }).select('+password');
+
+          if (!user || !(await user.comparePassword(credentials.password))) {
+            throw new Error('Wrong credentials!');
+          }
+          return user;
+        } catch (err) {
+          throw new Error(err);
+        }
+      }
+    }),
   ],
 });
 
