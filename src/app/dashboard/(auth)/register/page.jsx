@@ -41,6 +41,12 @@ const Register = () => {
           required
           className={styles.input}
         />
+        <input
+          type='password'
+          placeholder='Confirm Password'
+          required
+          className={styles.input}
+        />
         <button type='submit' className={styles.button}>Register</button>
         {error && 'Something went wrong!'}
       </form>
