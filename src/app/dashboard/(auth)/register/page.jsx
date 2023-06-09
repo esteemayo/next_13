@@ -7,6 +7,7 @@ import { useState } from 'react';
 import styles from './page.module.scss';
 
 const Register = () => {
+  const { push } = useRouter();
   const [error, setError] = useState(false);
 
   const handleSubmit = async (e) => {
