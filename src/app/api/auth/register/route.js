@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 
 import connectDB from '@/utils/db';
-import User from '@/models/User';
 
 export const POST = async (request) => {
   const { name, email, username, password, confirmPassword } = await request.json();
