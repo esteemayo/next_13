@@ -30,7 +30,7 @@ const Register = () => {
           className={styles.input}
         />
         <input
-          type='text'
+          type='email'
           placeholder='Email'
           required
           className={styles.input}
