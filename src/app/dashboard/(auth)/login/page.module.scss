@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  .form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .input {
+      padding: 2rem;
+      font-weight: bold;
+      font-size: 2rem;
+      background-color: transparent;
+      color: #bbb;
+      border: 2px solid #bbb;
+      border-radius: 0.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      border: none;
+      text-transform: capitalize;
+      font-weight: bold;
+      width: 100%;
+      padding: 2rem;
+      background-color: var(--clr-main);
+      color: #eee;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+}
