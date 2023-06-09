@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <ThemeProvider>
           <AuthProvider>
-          <div className='container'>
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
+            <div className='container'>
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
           </AuthProvider>
         </ThemeProvider>
       </body>
