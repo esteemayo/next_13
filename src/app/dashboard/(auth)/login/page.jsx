@@ -8,7 +8,7 @@ import styles from './page.module.scss';
 const Login = () => {
   const [error, setError] = useState();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
   };
 
