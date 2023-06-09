@@ -1,5 +1,6 @@
 import NextAuth from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
+import CredentialsProvider from 'next/providers/credentials';
 
 const handler = NextAuth({
   providers: [
