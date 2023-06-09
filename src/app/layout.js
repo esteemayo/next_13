@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
         <ThemeProvider>
-          <SessionProvider session={session}>
             <div className='container'>
               <Navbar />
               {children}
