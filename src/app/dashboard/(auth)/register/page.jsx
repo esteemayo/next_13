@@ -6,7 +6,7 @@ import { useState } from 'react';
 import styles from './page.module.scss';
 
 const Register = () => {
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
