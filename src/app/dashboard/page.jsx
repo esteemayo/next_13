@@ -26,7 +26,6 @@ const Dashboard = () => {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   const { data, error, isLoading } = useSWR('http://jsonplaceholder.typicode.com/posts', fetcher);
-  console.log(data);
 
   const session = useSession()
   console.log(session);
