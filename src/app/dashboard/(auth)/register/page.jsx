@@ -19,6 +19,12 @@ const Register = () => {
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type='text'
+          placeholder='Name'
+          required
+          className={styles.input}
+        />
+        <input
+          type='text'
           placeholder='Username'
           required
           className={styles.input}
