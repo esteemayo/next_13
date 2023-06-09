@@ -36,7 +36,8 @@ const Register = () => {
         body: JSON.stringify(newUser),
       });
 
-      res.status === 201 && push('/dashboard/login');
+      res.status === 201 &&
+        push('/dashboard/login?success=Account has been created');
     } catch (err) {
       setError(true);
     }
