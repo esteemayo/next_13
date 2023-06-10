@@ -49,6 +49,17 @@ const Dashboard = () => {
     }
   };
 
+  const handleDelete = async (postId) => {
+    try {
+      await fetch(`/api/posts/${postId}`, {
+        method: 'DELETE',
+      });
+      mutate();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   if (session.status === 'loading') {
     return <p>Loading...</p>;
   }
