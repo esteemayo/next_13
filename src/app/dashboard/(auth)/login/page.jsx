@@ -23,7 +23,6 @@ const Login = () => {
     };
 
     signIn('credentials', { ...credentials });
-    router.push('/dashboard');
   };
 
   if (session.status === 'loading') {
