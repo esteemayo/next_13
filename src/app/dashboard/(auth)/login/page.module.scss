@@ -70,7 +70,9 @@
     width: 30rem;
     padding: 2rem;
     background-color: rgba(228, 97, 50, 0.72);
-    color: var(--clr-white);
+    color: #eee;
+    border-radius: 0.5rem;
+    cursor: pointer;
   }
 
   .google:hover {
