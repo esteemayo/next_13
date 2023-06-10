@@ -26,6 +26,8 @@ export const POST = async (request) => {
   const body = await request.json();
 
   try {
+    await connectDB();
+
     const post = await Post.create({ ...body });
 
     return NextResponse.json(post, {
