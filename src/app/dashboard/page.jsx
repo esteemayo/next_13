@@ -6,7 +6,7 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 const Dashboard = () => {
-  const router = useRouter();
+  const { push } = useRouter();
   const session = useSession();
   // const [data, setData] = useState([]);
   // const [isLoading, setIsLoading] = useState(true);
