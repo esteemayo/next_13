@@ -8,6 +8,8 @@ import DarkModeToggle from '../darkModeToggle/DarkModeToggle';
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
+  const session = useSession();
+
   return (
     <nav className={styles.container}>
       <Link href='/' passHref className={styles.logo}>
