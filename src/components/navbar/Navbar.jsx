@@ -25,13 +25,15 @@ const Navbar = () => {
             </Link>
           );
         })}
-        <button
-          type='button'
-          className={styles.logout}
-          onClick={signOut}
-        >
-          logout
-        </button>
+        {session.status === 'authenticated' && (
+          <button
+            type='button'
+            className={styles.logout}
+            onClick={signOut}
+          >
+            logout
+          </button>
+        )}
       </div>
     </nav>
   );
