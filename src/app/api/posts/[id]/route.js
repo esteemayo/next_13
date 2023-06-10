@@ -15,7 +15,7 @@ export const GET = async (request, { params }) => {
       status: 200,
     });
   } catch (err) {
-    return NextResponse.json('Database Error', {
+    return NextResponse.json(err.message, {
       status: 500,
     });
   }
