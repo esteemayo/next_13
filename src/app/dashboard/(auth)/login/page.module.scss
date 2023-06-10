@@ -74,7 +74,8 @@
     border-radius: 0.5rem;
     cursor: pointer;
 
-  .google:hover {
-    background-color: rgba(228, 97, 50, 0.803);
+    &:hover {
+      background-color: rgba(228, 97, 50, 0.803);
+    }
   }
 }
