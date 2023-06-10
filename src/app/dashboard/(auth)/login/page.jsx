@@ -23,7 +23,7 @@ const Login = () => {
     };
 
     signIn('credentials', { ...credentials });
-    push('/dashboard');
+    router.push('/dashboard');
   };
 
   return (
