@@ -18,8 +18,33 @@ const Dashboard = () => {
     fetcher,
   );
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const title = e.target[0].value;
+    const desc = e.target[1].value;
+    const image = e.target[2].value;
+    const content = e.target[3].value;
+
+    const newPost = {
+      title,
+      desc,
+      image,
+      content,
+      username: session.data.user.name,
+    };
+
+    try {
+      await fetch('/api/posts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...newPost }),
+      });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   if (session.status === 'loading') {
