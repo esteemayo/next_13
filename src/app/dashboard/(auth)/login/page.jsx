@@ -8,9 +8,11 @@ import { useState } from 'react';
 
 const Login = () => {
   const router = useRouter();
+  const params = useSearchParams();
   const session = useSession();
 
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,6 +27,11 @@ const Login = () => {
 
     signIn('credentials', { ...credentials });
   };
+
+  useEffect(() => {
+    setError(params.get('error'));
+    setSuccess(params.get('success'));
+  }, [params]);
 
   if (session.status === 'loading') {
     return <p>Loading...</p>;
@@ -50,9 +57,13 @@ const Login = () => {
           className={styles.input}
         />
         <button type='submit' className={styles.button}>Login</button>
-        {error && 'Something went wrong!'}
+        {error && error}
       </form>
-      <button type='button' onClick={() => signIn('google')}>
+      <button
+        type='button'
+        className={styles.button + ' ' + styles.google}
+        onClick={() => signIn('google')}
+      >
         Login with Google
       </button>
     </div>
