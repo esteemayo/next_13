@@ -4,6 +4,8 @@ import useSWR from 'swr';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
+import styles from './page.module.scss';
+
 const Dashboard = () => {
   const router = useRouter();
   const session = useSession();
