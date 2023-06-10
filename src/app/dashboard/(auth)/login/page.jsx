@@ -30,6 +30,10 @@ const Login = () => {
     return <p>Loading...</p>;
   }
 
+  if (session.status === 'authenticated') {
+    return router?.push('/dashboard');
+  }
+
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
