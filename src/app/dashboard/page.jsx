@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
 
 const Dashboard = () => {
+  const session = useSession();
   // const [data, setData] = useState([]);
   // const [isLoading, setIsLoading] = useState(true);
   // const [isError, setIsError] = useState(false);
@@ -26,8 +27,6 @@ const Dashboard = () => {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   const { data, error, isLoading } = useSWR('http://jsonplaceholder.typicode.com/posts', fetcher);
-
-  const session = useSession()
   console.log(session);
 
   return (
