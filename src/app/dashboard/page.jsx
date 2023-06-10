@@ -59,28 +59,30 @@ const Dashboard = () => {
     return (
       <div className={styles.container}>
         <div className={styles.posts}>
-          {data.map((post) => {
-            const { _id: id, title, image } = post;
-            return (
-              <div className={styles.post} key={id}>
-                <div className={styles.imgContainer}>
-                  <Image
-                    src={image}
-                    alt=''
-                    width={200}
-                    height={100}
-                    className={styles.img}
-                  />
+          {isLoading
+            ? 'loading'
+            : data.map((post) => {
+              const { _id: id, title, image } = post;
+              return (
+                <div className={styles.post} key={id}>
+                  <div className={styles.imgContainer}>
+                    <Image
+                      src={image}
+                      alt=''
+                      width={200}
+                      height={100}
+                      className={styles.img}
+                    />
+                  </div>
+                  <h2 className={styles.postTitle}>{title}</h2>
+                  <span
+                    className={styles.delete}
+                  >
+                    X
+                  </span>
                 </div>
-                <h2 className={styles.postTitle}>{title}</h2>
-                <span
-                  className={styles.delete}
-                >
-                  X
-                </span>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
         <form className={styles.new} onSubmit={handleSubmit}>
           <h1>Add New Post</h1>
