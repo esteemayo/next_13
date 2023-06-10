@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { links } from '@/data';
 import DarkModeToggle from '../darkModeToggle/DarkModeToggle';
 import styles from './Navbar.module.scss';
-import { signOut } from 'next-auth/react';
 
 const Navbar = () => {
   return (
