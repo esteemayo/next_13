@@ -26,6 +26,10 @@ const Login = () => {
     router.push('/dashboard');
   };
 
+  if (session.status === 'loading') {
+    return <p>Loading...</p>;
+  }
+
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
