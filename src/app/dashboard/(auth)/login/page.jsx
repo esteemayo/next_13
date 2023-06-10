@@ -5,6 +5,7 @@ import { signIn, useSession } from 'next-auth/react';
 
 import styles from './page.module.scss';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Login = () => {
   const router = useRouter();
@@ -66,6 +67,10 @@ const Login = () => {
       >
         Login with Google
       </button>
+      <span className={styles.or}>- OR -</span>
+      <Link className={styles.link} href='/dashboard/register'>
+        Create new account
+      </Link>
     </div>
   );
 }
