@@ -36,7 +36,12 @@ const Dashboard = () => {
         <div className={styles.posts}>
           <div className={styles.post}>
             <div className={styles.imgContainer}>
-              <Image src='https://images.pexels.com/photos/12225910/pexels-photo-12225910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt='' width={200} height={100} />
+              <Image
+                src='https://images.pexels.com/photos/12225910/pexels-photo-12225910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                alt=''
+                width={200}
+                height={100}
+              />
             </div>
             <h2 className={styles.postTitle}>My first blog post</h2>
             <span
