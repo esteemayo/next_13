@@ -19,4 +19,4 @@ export const GET = async (request, { params }) => {
       status: 500,
     });
   }
-}
+};
