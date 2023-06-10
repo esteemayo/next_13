@@ -7,6 +7,8 @@ import styles from './page.module.scss';
 import { useState } from 'react';
 import Link from 'next/link';
 
+import styles from './page.module.scss';
+
 const Login = () => {
   const router = useRouter();
   const params = useSearchParams();
