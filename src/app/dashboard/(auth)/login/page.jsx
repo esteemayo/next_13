@@ -10,7 +10,7 @@ const Login = () => {
   const router = useRouter();
   const session = useSession();
 
-  const [error, setError] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
