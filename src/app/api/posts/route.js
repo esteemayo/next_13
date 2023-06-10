@@ -21,3 +21,19 @@ export const GET = async (request) => {
     });
   }
 }
+
+export const POST = async (request) => {
+  const body = await request.json();
+
+  try {
+    const post = await Post.create({ ...body });
+
+    return NextResponse.json(post, {
+      status: 201,
+    });
+  } catch (err) {
+    return NextResponse.json(err.message, {
+      status: 500,
+    });
+  }
+};
