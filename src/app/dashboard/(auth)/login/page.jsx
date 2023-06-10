@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { signIn, useSession } from 'next-auth/react';
@@ -70,7 +70,7 @@ const Login = () => {
         Login with Google
       </button>
       <span className={styles.or}>- OR -</span>
-      <Link className={styles.link} href='/dashboard/register'>
+      <Link className={styles.link} href='/dashboard/register' passHref>
         Create new account
       </Link>
     </div>
