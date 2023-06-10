@@ -42,6 +42,8 @@ const Dashboard = () => {
         },
         body: JSON.stringify({ ...newPost }),
       });
+
+      mutate();
     } catch (err) {
       console.log(err);
     }
