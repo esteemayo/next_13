@@ -9,7 +9,6 @@ import { useRouter } from 'next/navigation';
 const Login = () => {
   const router = useRouter();
   const session = useSession();
-  const [error, setError] = useState();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
