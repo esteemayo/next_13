@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 
 import styles from './page.module.scss';
+import { useRouter } from 'next/navigation';
 
 const Login = () => {
   const [error, setError] = useState();
