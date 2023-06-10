@@ -90,6 +90,7 @@ const Dashboard = () => {
                   <h2 className={styles.postTitle}>{title}</h2>
                   <span
                     className={styles.delete}
+                    onClick={() => handleDelete(id)}
                   >
                     X
                   </span>
