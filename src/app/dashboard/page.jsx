@@ -12,7 +12,10 @@ const Dashboard = () => {
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-  const { data, error, isLoading } = useSWR(`/api/posts?username=${session?.data?.user.name}`, fetcher);
+  const { data, error, isLoading } = useSWR(
+    `/api/posts?username=${session?.data?.user.name}`,
+    fetcher,
+  );
 
   if (session.status === 'loading') {
     return <p>Loading...</p>;
