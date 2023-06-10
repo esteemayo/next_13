@@ -20,7 +20,7 @@ export const GET = async (request) => {
       status: 500,
     });
   }
-}
+};
 
 export const POST = async (request) => {
   const body = await request.json();
