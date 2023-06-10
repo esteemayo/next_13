@@ -22,6 +22,7 @@ const Login = () => {
     };
 
     signIn('credentials', { ...credentials });
+    push('/dashboard');
   };
 
   return (
