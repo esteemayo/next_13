@@ -41,6 +41,7 @@ const Dashboard = () => {
                 alt=''
                 width={200}
                 height={100}
+                className={styles.img}
               />
             </div>
             <h2 className={styles.postTitle}>My first blog post</h2>
