@@ -35,6 +35,10 @@ const Dashboard = () => {
     return <p>Loading...</p>;
   }
 
+  if (session.status === 'unauthenticated') {
+    return router?.push('/dashboard/login');
+  }
+
   return (
     <div>Dashboard</div>
   );
