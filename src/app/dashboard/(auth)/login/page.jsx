@@ -7,7 +7,7 @@ import styles from './page.module.scss';
 import { useRouter } from 'next/navigation';
 
 const Login = () => {
-  const { push } = useRouter();
+  const router = useRouter();
   const session = useSession();
   const [error, setError] = useState();
 
