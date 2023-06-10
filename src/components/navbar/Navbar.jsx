@@ -24,6 +24,7 @@ const Navbar = () => {
         <button
           type='button'
           className={styles.logout}
+          onClick={signOut}
         >
           logout
         </button>
