@@ -44,6 +44,7 @@ const Dashboard = () => {
       });
 
       mutate();
+      e.target.reset();
     } catch (err) {
       console.log(err);
     }
