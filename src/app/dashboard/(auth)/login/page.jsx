@@ -7,6 +7,7 @@ import styles from './page.module.scss';
 import { useRouter } from 'next/navigation';
 
 const Login = () => {
+  const { push } = useRouter();
   const [error, setError] = useState();
 
   const handleSubmit = async (e) => {
