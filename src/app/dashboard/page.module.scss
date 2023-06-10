@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  gap: 10rem;
+
+  .posts {
+    flex: 1;
+
+    .post {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px 0px;
+
+      .imgContainer {
+        width: 20rem;
+        height: 10rem;
+        position: Ū;
+
+        .img {
+          object-fit: cover;
+        }
+      }
+
+      .delete {
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+
+  .new {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .input,
+    .textArea {
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 2rem;
+      padding: 1rem;
+      background-color: transparent;
+      color: #bbb;
+      border: 2px solid #bbb;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .button {
+      border: none;
+      font-weight: bold;
+      padding: 2rem;
+      background-color: var(--clr-main);
+      color: #eee;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
