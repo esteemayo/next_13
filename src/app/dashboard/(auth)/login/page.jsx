@@ -3,7 +3,6 @@
 import { signIn, useSession } from 'next-auth/react';
 
 import styles from './page.module.scss';
-import { useRouter } from 'next/navigation';
 
 const Login = () => {
   const router = useRouter();
