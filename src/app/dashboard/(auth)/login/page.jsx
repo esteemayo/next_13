@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { signIn, useSession } from 'next-auth/react';
 
 import styles from './page.module.scss';
