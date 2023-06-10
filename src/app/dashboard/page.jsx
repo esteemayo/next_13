@@ -42,7 +42,7 @@ const Dashboard = () => {
 
   if (session.status === 'authenticated') {
     return (
-      <div>Dashboard</div>
+      <div className={styles.container}>Dashboard</div>
     );
   }
 }
