@@ -21,7 +21,7 @@ const handler = NextAuth({
         try {
           const user = await User.findOne({ email: credentials.email }).select('+password');
 
-          if (!user || !(await user.comparePassword(credentials.password))) {
+          if (!user || !(await bcrypt.compare(credentials.password, user.password))) {
             throw new Error('Wrong credentials!');
           }
           return user;
