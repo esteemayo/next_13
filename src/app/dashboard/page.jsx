@@ -31,6 +31,10 @@ const Dashboard = () => {
   const { data, error, isLoading } = useSWR('http://jsonplaceholder.typicode.com/posts', fetcher);
   console.log(session);
 
+  if (session.status === 'loading') {
+    return <p>Loading...</p>
+  }
+
   return (
     <div>Dashboard</div>
   );
