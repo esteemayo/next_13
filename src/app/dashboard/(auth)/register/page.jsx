@@ -8,6 +8,7 @@ import { useSession } from 'next-auth/react';
 import styles from './page.module.scss';
 
 const Register = () => {
+  const router = useRouter();
   const session = useSession();
 
   const [error, setError] = useState(false);
