@@ -55,8 +55,11 @@
   }
 
   .link {
-    text-decoration: underline;
-    color: #7d7c7c;
+    &:link,
+    &:visited {
+      text-decoration: underline;
+      color: #7d7c7c;
+    }
   }
 
   .link:hover {
