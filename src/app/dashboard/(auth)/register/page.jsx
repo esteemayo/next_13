@@ -50,6 +50,10 @@ const Register = () => {
     return <p>loading...</p>;
   }
 
+  if (session.status === 'authenticated') {
+    return router.push('/dashboard');
+  }
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Create an Account</h1>
