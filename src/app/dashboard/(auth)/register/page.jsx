@@ -9,7 +9,6 @@ import styles from './page.module.scss';
 
 const Register = () => {
   const session = useSession();
-  const router = useRouter();
 
   const [error, setError] = useState(false);
 
