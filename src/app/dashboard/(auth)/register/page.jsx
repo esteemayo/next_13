@@ -46,6 +46,10 @@ const Register = () => {
     }
   };
 
+  if (session.status === 'loading') {
+    return <p>loading...</p>;
+  }
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Create an Account</h1>
