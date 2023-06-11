@@ -51,7 +51,7 @@ const Register = () => {
   }
 
   if (session.status === 'authenticated') {
-    return router.push('/dashboard');
+    return router?.push('/dashboard');
   }
 
   return (
