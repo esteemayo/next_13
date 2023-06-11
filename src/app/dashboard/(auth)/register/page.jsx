@@ -10,6 +10,7 @@ import styles from './page.module.scss';
 const Register = () => {
   const session = useSession();
   const { push } = useRouter();
+
   const [error, setError] = useState(false);
 
   const handleSubmit = async (e) => {
