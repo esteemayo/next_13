@@ -64,6 +64,10 @@
     &:active {
       color: currentColor;
     }
+
+    &:hover {
+      color: rgb(61, 61, 61);
+    }
   }
 
   .link:hover {
