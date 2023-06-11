@@ -30,7 +30,7 @@ export const DELETE = async (request, { params }) => {
     await Post.findByIdAndDelete(productId);
 
     return NextResponse.json('Post has been deleted', {
-      status: 204,
+      status: 200,
     });
   } catch (err) {
     return NextResponse.json(err.message, {
