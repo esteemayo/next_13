@@ -60,6 +60,10 @@
       text-decoration: underline;
       color: #7d7c7c;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 
   .link:hover {
