@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 import styles from './page.module.scss';
-import { useSession } from 'next-auth/react';
 
 const Register = () => {
   const session = useSession();
