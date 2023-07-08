@@ -2,6 +2,7 @@
 
 import useSWR from 'swr';
 import { useSession } from 'next-auth/react';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 import styles from './page.module.scss';
