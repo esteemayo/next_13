@@ -5,7 +5,6 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 import styles from './page.module.scss';
-import Image from 'next/image';
 
 const Dashboard = () => {
   const router = useRouter();
